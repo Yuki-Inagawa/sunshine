@@ -40,15 +40,14 @@ Things you may want to cover:
 |name       |string|null: false|
 |occupation |string|null: false|
 |love       |string|null: false|
-|gender     |char  |null: false|
 |birth1     |string|null: false|
 |birth2     |string|null: false|
 |birth3     |string|null: false|
 |grand_prix |string|null: false|
 |height     |integer|null: false|
 |weight     |integer|null: false|
-|weight     |integer|null: false|
 |salary     |integer|null: false|
+|balance    |integer|null: false|
 |password   |integer|null: false|
 |tip        |string|null: false|
 
