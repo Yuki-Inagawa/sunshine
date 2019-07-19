@@ -1,6 +1,11 @@
 class IkezakisController < ApplicationController
 
   def index
+    @ikezakis = Ikezaki.all
+  end
+
+  def show
+    @ikezaki = Ikezaki.find(params[:id])
   end
 
   def new
@@ -14,5 +19,6 @@ class IkezakisController < ApplicationController
 
   private
   def create_params
+    params.require(:ikezaki).permit(:name, :occupation, :love, :birth1, :birth2, :birth3, :grand_prix, :height, :weight, :salary,:balance, :password, :tip)
   end
 end
