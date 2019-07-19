@@ -1,0 +1,2 @@
+module IkezakisHelper
+end
