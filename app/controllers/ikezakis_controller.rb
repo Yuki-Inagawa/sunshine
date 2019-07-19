@@ -1,0 +1,2 @@
+class IkezakisController < ApplicationController
+end
