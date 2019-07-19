@@ -1,0 +1,29 @@
+<h2>新規サンシャイン</h2>
+
+<%= form_for @ikezaki do |f| %>
+<%= f.label "名前" %><br>
+<%= f.text_field :name %><br>
+<%= f.label "職業" %><br>
+<%= f.text_field :occupation %><br>
+<%= f.label "好きなもの" %><br>
+<%= f.text_field :love %><br>
+<%= f.label "あなたは何の生みの親？３つお答えください" %><br>
+<%= f.text_field :birth1 %><br>
+<%= f.text_field :birth2 %><br>
+<%= f.text_field :birth3 %><br>
+<%= f.label "参加したことのあるのは何ー１グランプリ？" %><br>
+<%= f.text_field :grand_prix %><br>
+<%= f.label "身長" %><br>
+<%= f.number_field :height %><br>
+<%= f.label "体重" %><br>
+<%= f.number_field :weight %><br>
+<%= f.label "時給" %><br>
+<%= f.number_field :salary %><br>
+<%= f.label "預金残高" %><br>
+<%= f.number_field :balance %><br>
+<%= f.label "キャッシュカードの暗証番号" %><br>
+<%= f.password_field :password %><br>
+<%= f.label "暗証番号の覚え方" %><br>
+<%= f.text_field :tip %><br>
+<%= f.submit "ジャスティス" %>
+<% end %>
