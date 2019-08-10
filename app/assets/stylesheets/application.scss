@@ -13,4 +13,8 @@
  *= require_tree .
  *= require_self
  */
- 
+ @import        "./reset";                   ///リセットCSS
+ @import        "./ikezaki/ikezakis.scss";  
+.main{
+  background-color: red;
+}

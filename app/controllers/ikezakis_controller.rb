@@ -19,6 +19,6 @@ class IkezakisController < ApplicationController
 
   private
   def create_params
-    params.require(:ikezaki).permit(:name, :occupation, :love, :birth1, :birth2, :birth3, :grand_prix, :height, :weight, :salary,:balance, :password, :tip)
+    params.require(:ikezaki).permit(:name, :occupation, :love, :birth1, :birth2, :birth3, :grand_prix, :height, :weight, :salary,:balance, :password, :tip, :sex)
   end
 end
