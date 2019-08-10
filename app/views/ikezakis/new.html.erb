@@ -3,6 +3,8 @@
 <%= form_for @ikezaki do |f| %>
 <%= f.label "名前" %><br>
 <%= f.text_field :name %><br>
+<%= f.label "性別" %><br>
+<%= f.select :sex %><br>
 <%= f.label "職業" %><br>
 <%= f.text_field :occupation %><br>
 <%= f.label "何に愛し、何に愛された？" %><br>
