@@ -1,0 +1,14 @@
+%body
+  %header
+    = render partial: "/layouts/header"
+  .main
+    %h2
+      %a{:href => "/ikezakis/new"} 新しくサンシャインを作成する
+      %h2
+        %h3 サンシャイン一覧
+        - @ikezakis.each do |ikezaki|
+          %a{:href => "/ikezakis/#{ikezaki.id}"}
+            %p
+              サンシャイン#{ikezaki.name}
+  %footer
+    = render partial: "/layouts/footer"
