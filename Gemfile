@@ -56,3 +56,5 @@ gem 'haml-rails'
 group :production do
   gem 'pg'
 end
+
+gem 'bundler'
