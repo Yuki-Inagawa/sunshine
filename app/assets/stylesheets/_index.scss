@@ -1,0 +1,36 @@
+.header{
+  height: 130px;
+  text-align: center;
+  background-color: #fffc56;
+  padding: 10px;
+  h1{
+    font-size: 50px;
+    color:blue;
+  }
+  h2{
+    color: red;
+  }
+}
+.main{
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background:gray;
+  .list-group{
+    margin: 30px;
+    float: left;
+    width:300px;
+  }
+  .create-sunshine{
+    float: left;
+    margin-top: 100px;
+    padding-left: 100px;
+  }
+  .ikezaki-list{
+    width: 500px;
+    margin: auto;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    background: white;
+  }
+}
