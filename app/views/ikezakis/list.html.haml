@@ -6,14 +6,10 @@
     %a.list-group-item.list-group-item-action{:href => "https://www.watanabepro.co.jp/mypage/40000114/"} About サンシャイン池崎
     %a.list-group-item.list-group-item-action{:href => "#"} マイページ
     %a.list-group-item.list-group-item-action{:href => "#"} お問い合わせ
-  .create-sunshine
+  .ikezaki-list
     %h2
-      %a{:href => "/ikezakis/new"} 新しくサンシャインを作成する
-    -# %h2
-    -#   %h3 サンシャイン一覧
-    -#   - @ikezakis.each do |ikezaki|
-    -#     %a{:href => "/ikezakis/#{ikezaki.id}"}
-    -#       %p
-    -#         サンシャイン#{ikezaki.name}
-%footer
-  = render partial: "/layouts/footer"
+      %h3 サンシャイン一覧
+      - @ikezakis.each do |ikezaki|
+        %a{:href => "/ikezakis/#{ikezaki.id}"}
+          %p
+            サンシャイン#{ikezaki.name}
