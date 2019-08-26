@@ -17,6 +17,13 @@ class IkezakisController < ApplicationController
     redirect_to root_path
   end
 
+  def about
+  end
+
+  def list
+    @ikezakis = Ikezaki.all
+  end
+
   private
   def create_params
     params.require(:ikezaki).permit(:name, :occupation, :love, :birth1, :birth2, :birth3, :grand_prix, :height, :weight, :salary,:balance, :password, :tip, :sex)
