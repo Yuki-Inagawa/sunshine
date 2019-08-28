@@ -1,27 +1,40 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://sunshine-inagawa.herokuapp.com/ 
 
-Things you may want to cover:
+*アプリ名
 
-* Ruby version
+今日からお前もサンシャイン
 
-* System dependencies
+＊概要
 
-* Configuration
+ワタナベエンターテイメント所属の人気お笑い芸人「サンシャイン池崎」さんのネタを自動で生成しするサービスです。
+お名前や職業などをフォームに入力するだけで簡単にユーザーオリジナルのネタを生成することが出来ます。
 
-* Database creation
+また、ネタの詳細ページの読み上げボタンを押すと、生成したネタをお使いのデバイスから読み上げることも可能です。
 
-* Database initialization
 
-* How to run the test suite
+*アプリ製作者の思い
 
-* Services (job queues, cache servers, search engines, etc.)
+芸人さんのネタをプログラムに落とし込んでみたい！
+と思い作り始めました。
 
-* Deployment instructions
+サンシャイン池崎さんのネタはとても完成度が高くシステム化されており、
+ボケの部分を変数に置き換えることが可能でした。
 
-* ...
+ぜひ今日からサンシャインになって下さい！！
+
+＊今後実装予定の機能
+
+編集、削除
+
+マイページ
+
+ランキング
+
+コメント
+
+男性用ボイス、女性用ボイスの実装
 
 
 ## usersテーブル
