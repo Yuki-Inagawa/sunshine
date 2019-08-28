@@ -4,11 +4,17 @@
   background-color: #fffc56;
   padding: 10px;
   h1{
-    font-size: 50px;
+    font-size: 30px;
     color:blue;
   }
-  h2{
-    color: red;
+  .header__bar{
+    // display: flex;
+    h2{
+      color: red;
+      font-size: 20px;
+    }
+    .grid-6{
+    }
   }
 }
 .main{
