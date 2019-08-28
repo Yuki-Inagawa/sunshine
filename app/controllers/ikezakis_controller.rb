@@ -1,4 +1,5 @@
 class IkezakisController < ApplicationController
+  before_action :move_to_index, except: [:index, :list]
 
   def index
     @ikezakis = Ikezaki.all
@@ -26,6 +27,9 @@ class IkezakisController < ApplicationController
 
   private
   def create_params
-    params.require(:ikezaki).permit(:name, :occupation, :love, :birth1, :birth2, :birth3, :grand_prix, :height, :weight, :salary,:balance, :password, :tip, :sex)
+    params.require(:ikezaki).permit(:name, :occupation, :love, :birth1, :birth2, :birth3, :grand_prix, :height, :weight, :salary,:balance, :password, :tip, :sex).merge(user_id: current_user.id)
+  end
+  def move_to_index
+    redirect_to action: :index unless user_signed_in?
   end
 end

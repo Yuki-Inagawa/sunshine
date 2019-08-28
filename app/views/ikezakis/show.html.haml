@@ -1,6 +1,6 @@
 .ikezaki
   .neta
-    %h2
+    %h3
       「イエーーーーーーーーーーーーイ！！！！！
       どーもー。
       空前絶後の、超絶怒涛の
@@ -76,7 +76,7 @@
     var text = document.querySelector('.text').value;
     var msg = new SpeechSynthesisUtterance(text);
      var voices = window.speechSynthesis.getVoices();
-     msg.voice = voices[30];
+     msg.voice = voices[7];
      msg.pitch = 1.8;
     speechSynthesis.speak(msg);
     function pause(){
