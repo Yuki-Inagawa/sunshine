@@ -1,11 +1,7 @@
 %header
   = render partial: "/layouts/header"
 .main
-  .list-group
-    %a.list-group-item.list-group-item-action{:href => "/"} TOP
-    %a.list-group-item.list-group-item-action{:href => "/ikezakis/list"} サンシャイン一覧
-    %a.list-group-item.list-group-item-action{:href => "https://www.watanabepro.co.jp/mypage/40000114/"} About サンシャイン池崎
-    %a.list-group-item.list-group-item-action{:href => "#"} マイページ
+  = render partial: "/layouts/navbar"
   .ikezaki-list
     %h2
       %h3 サンシャイン一覧
@@ -13,3 +9,6 @@
         %a{:href => "/ikezakis/#{ikezaki.id}"}
           %p
             サンシャイン#{ikezaki.name}
+          .delete-btn
+            - if user_signed_in? && current_user.id == ikezaki.user_id
+              = link_to '削除', ikezaki_path(id: ikezaki.id), method: :delete
