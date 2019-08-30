@@ -6,6 +6,9 @@
     %meta{:content => "no-cache", "http-equiv" => "cache-control"}/
     %meta{:content => "width=device-width", :name => "viewport"}/
     %title 今日からお前もサンシャイン！！
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = csrf_meta_tag
+
     -# application.scssの読み込み
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", :integrity => "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", :rel => "stylesheet"}/
