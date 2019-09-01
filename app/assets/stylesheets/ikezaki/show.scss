@@ -28,6 +28,7 @@
       .speak-btn:hover{
         height: 200px;
         width:200px;
+
       }
       
       .speak-btn:active {
@@ -39,6 +40,9 @@
     }
     .ikezaki-script{
       padding: 15px;
+      .show-btn{
+        margin-top:5px;
+      }
     }
   }
 }
