@@ -1,14 +1,13 @@
-%header
+.list-wrapper
   = render partial: "/layouts/header"
-.main
-  = render partial: "/layouts/navbar"
-  .ikezaki-list
-    %h2
-      %h3 サンシャイン一覧
-      - @ikezakis.each do |ikezaki|
-        %a{:href => "/ikezakis/#{ikezaki.id}"}
-          %p
-            サンシャイン#{ikezaki.name}
-          .delete-btn
-            - if user_signed_in? && current_user.id == ikezaki.user_id
-              = link_to '削除', ikezaki_path(id: ikezaki.id), method: :delete
+  .list-contents
+    %h1 サンシャイン一覧
+    - @ikezakis.each do |ikezaki|
+      .card
+        .card-header
+          サンシャイン#{ikezaki.name}
+        .card-body
+          %p.card-text #{ikezaki.user}さんのサンシャイン
+          %a.btn.btn-primary{:href => "/ikezakis/#{ikezaki.id}"} 詳細をジャスティス
+          -# - if user_signed_in? && current_user.id == ikezaki.user_id
+          = link_to '削除', ikezaki_path(id: ikezaki.id), method: :delete, class: "btn btn-primary bg-danger"

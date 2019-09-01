@@ -1,15 +1,15 @@
-%header
-  = render partial: "/layouts/header"
-.main
-  = render partial: "/layouts/navbar"
-  .create-sunshine
-    %h2
-      %a{:href => "/ikezakis/new"} 新しくサンシャインを作成する
-    -# %h2
-    -#   %h3 サンシャイン一覧
-    -#   - @ikezakis.each do |ikezaki|
-    -#     %a{:href => "/ikezakis/#{ikezaki.id}"}
-    -#       %p
-    -#         サンシャイン#{ikezaki.name}
-%footer
-  = render partial: "/layouts/footer"
+%body.index.basic.is-pc
+  .wrapper
+    = render partial: "/layouts/header"
+    .index
+      .eyecatch
+        .wrap-bg-image
+          -# = image_tag("ikezaki.jpg")
+          .center-part
+            .center-top
+              .messages
+                %p.copy-large-img.hidden-md-down 
+                %p.copy-large-img.hidden-md-dwon 
+
+            .plan-link
+              = link_to "新規サンシャイン作成", new_ikezaki_path, class: 'button'

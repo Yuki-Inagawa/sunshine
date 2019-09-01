@@ -1,0 +1,12 @@
+.list-wrapper{
+  .list-contents{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 120px;
+    height: 306px;
+    z-index: 100;
+  }
+}
