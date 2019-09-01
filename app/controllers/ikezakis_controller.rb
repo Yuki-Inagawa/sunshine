@@ -1,5 +1,5 @@
 class IkezakisController < ApplicationController
-  before_action :move_to_signup, except: [:index, :list]
+  before_action :move_to_signup, except: [:index, :list,:show,:about,]
 
   def index
     @ikezakis = Ikezaki.all
@@ -33,7 +33,7 @@ class IkezakisController < ApplicationController
   def destroy
     ikezaki = Ikezaki.find(params[:id])
     # if ikezaki.user_id == current_user.id
-      ikezaki.destroy
+    #   ikezaki.destroy
     # end
   end
 
