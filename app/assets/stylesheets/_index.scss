@@ -1,43 +1,83 @@
-.header{
-  height: 130px;
-  text-align: center;
-  background-color: #fffc56;
-  padding: 10px;
-  h1{
-    font-size: 30px;
-    color:blue;
-  }
-  .header__bar{
-    // display: flex;
-    h2{
-      color: red;
-      font-size: 20px;
+body{
+  font-family: \\6E38\30B4\30B7\30C3\30AF\4F53,YuGothic,\\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3,Hiragino Kaku Gothic Pro,Meiryo UI,\\30E1\30A4\30EA\30AA,Meiryo,"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF",MS PGothic,sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #292b2c;
+  background-color: #fff;
+  margin:0;
+  display: block;
+  .wrapper{
+    .index{
+      .eyecatch{
+        background-image: image-url("ikezaki2.jpg");
+        // background: #037cff;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        max-height: 700px;
+        .wrap-bg-image{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // background-image: image-url("ikezaki.jpg")
+          img{
+            
+            left: auto;
+            position: absolute;
+            bottom: -150px;
+            display: block;
+            width: 100%;
+            z-index: 1;
+            flex-shrink: 0;
+            min-width: 564px;
+            opacity: 0.5;
+          }
+        }
+        .center-part{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin-top: 145px;
+          height: 306px;
+          z-index: 100;
+          .center-top{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 200px;
+            .messages{
+              margin: 17px 0 0;
+              .copy-large-img{
+                width: 800px;
+              }
+            }
+          }
+          .plan-link{
+            margin: auto;
+            background: none;
+            text-align: center;
+            .button{
+              display: block;
+              padding: 14px 0;
+              margin: 0 auto;
+              width: 340px;
+              font-size: 22px;
+              text-decoration: none;
+              background: #f64019;
+              color: #fff;
+              font-weight: 700;
+              text-align: center;
+              border-radius: 5px;
+            }
+            .button:hover{
+              background: yellow;
+              color: red;
+            }
+          }
+        }
+      }
     }
-    .grid-6{
-    }
-  }
-}
-.main{
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  background:#fff;
-  .list-group{
-    margin: 30px;
-    float: left;
-    width:300px;
-  }
-  .create-sunshine{
-    float: left;
-    margin-top: 100px;
-    padding-left: 100px;
-  }
-  .ikezaki-list{
-    width: 500px;
-    margin: auto;
-    padding: 20px 20px 0 20px;
-    text-align: center;
-    background: white;
-    height: 100%;
   }
 }

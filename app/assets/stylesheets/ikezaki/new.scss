@@ -1,0 +1,88 @@
+body{
+  .wrapper{
+    display: table;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    overflow-y: scroll;
+    .navbar{
+      height: 40px;
+      min-height: 40px;
+      border-color: gray;
+      position: relative;
+      min-height: 50px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid;
+      color: blue;
+    }
+    .container{
+      clear: both;
+      display: block;
+      height: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      font-size: 10px;
+      font-size: .625rem;
+      .inner{
+        vertical-align: top;
+        display: table-cell;
+        .inner-contents{
+          padding: 0;
+          width: 700px;
+          margin: 0 auto 50px;
+          .wrapper-page-title{
+            width: 100%;
+            .page-title{
+              text-align: center;
+              font-size: 1.5rem;
+              margin-bottom: .5rem;
+              font-weight: 500;
+              line-height: 1.2;
+            }
+          }
+          .inner-content{
+            .text-o-lead{
+              text-align: center!important;
+              margin: 0 0 32px;
+              color: #616977;
+              font-size: 0.8rem!important;
+              line-height: 1.5;
+              letter-spacing: normal;
+            }
+            .form{
+              margin: 5px;
+              padding: 5px;
+              .errors{
+                color: red;
+              }
+              .submit{
+                
+                input{
+                  background: #007dff;
+                  border: none;
+                  display: block;
+                  padding: 0 24px;
+                  margin: 0 auto 16px;
+                  font-size: 1.4rem;
+                  width: 270px;
+                  height: 4rem;
+                  line-height: 4rem;
+                  outline: none!important;
+                  border-radius: 100px;
+                  font-weight: 700;
+                  color: #fff;
+                }
+                input:hover{
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

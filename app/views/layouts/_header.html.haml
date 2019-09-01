@@ -1,12 +1,43 @@
-.header
-  = link_to root_path, class: 'get' do
-    %h1 今日からお前もサンシャイン
-  .header__bar
-    %h2 〜サンシャイン池崎のネタ自動生成サービス〜
-  - if user_signed_in?
-    .user_nav
-      = link_to "ログアウト", destroy_user_session_path, method: :delete
-  - else
-    .user_nav
-      = link_to "ログイン", new_user_session_path, class: 'post'
-      = link_to "新規登録", new_user_registration_path, class: 'post'
+%header
+  .wide-container.cleafix
+    = link_to root_path, class: 'logo-part' do
+      .logo-box
+        %p.header-logo 今日からお前もサンシャイン！！！
+        %p.message 〜サンシャイン池崎のネタ自動生成サービス〜
+    .header-img
+      = link_to image_tag("syunnminn.png", width: '50', height: '50')
+    .header-right.hidden-md-down
+      .menu-list
+        = link_to "TOP", root_path, class: 'menu'
+        = link_to "サンシャイン一覧", list_ikezakis_path, class: 'menu' 
+        = link_to "ABOUT池崎", "https://www.watanabepro.co.jp/mypage/40000114/" , class: 'menu' 
+        -# = link_to "マイページ", root_path, class: 'menu'  
+      .header-btns
+        .login-btn
+          - if user_signed_in?
+            = link_to "ログアウト", destroy_user_session_path, method: :delete
+          - else
+            = link_to "ログイン", new_user_session_path
+
+
+
+
+
+
+
+
+
+
+
+-# .header
+-#   = link_to root_path, class: 'get' do
+-#     %h1 今日からお前もサンシャイン
+-#   .header__bar
+-#     %h2 〜サンシャイン池崎のネタ自動生成サービス〜
+-#   - if user_signed_in?
+-#     .user_nav
+-#       = link_to "ログアウト", destroy_user_session_path, method: :delete
+-#   - else
+-#     .user_nav
+-#       = link_to "ログイン", new_user_session_path, class: 'post'
+-#       = link_to "新規登録", new_user_registration_path, class: 'post'

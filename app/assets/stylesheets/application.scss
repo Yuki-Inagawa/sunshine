@@ -1,3 +1,9 @@
- @import        "reset";                   ///リセットCSS
- @import        "./ikezaki/show.scss";  
- @import        "index";
+@import        "reset";                   ///リセットCSS 
+ 
+// 〜〜トップページ〜〜
+@import        "index";
+@import        "./shared/header.scss"; 
+// 〜〜池崎〜〜
+@import        "./ikezaki/show.scss"; 
+@import        "./ikezaki/new.scss"; 
+@import        "./ikezaki/list.scss";

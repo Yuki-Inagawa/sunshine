@@ -1,0 +1,19 @@
+ja:
+  activerecord:
+    models:
+      ikezaki: 池崎
+    attributes:
+      ikezaki:
+        name: 名前
+        occupation: 職業
+        love: 愛したもの
+        birth1: 生み出したもの
+        birth2: 生み出したもの
+        birth3: 生み出したもの
+        grand_prix: グランプリ
+        height: 身長
+        weight: 体重
+        salary: 時給
+        balance: 預金残高
+        password: パスワード
+        tip:  覚え方

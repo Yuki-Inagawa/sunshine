@@ -14,8 +14,13 @@ class IkezakisController < ApplicationController
   end
 
   def create
-    Ikezaki.create(create_params)
-    redirect_to root_path
+    @ikezaki= Ikezaki.new(create_params)
+    if @ikezaki.valid?
+      @ikezaki.save
+      redirect_to root_path
+    else
+      render "new"
+    end
   end
 
   def about
@@ -27,9 +32,9 @@ class IkezakisController < ApplicationController
 
   def destroy
     ikezaki = Ikezaki.find(params[:id])
-    if ikezaki.user_id == current_user.id
+    # if ikezaki.user_id == current_user.id
       ikezaki.destroy
-    end
+    # end
   end
 
   private

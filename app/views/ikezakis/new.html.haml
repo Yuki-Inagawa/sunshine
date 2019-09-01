@@ -1,5 +1,113 @@
-%h2 新規サンシャイン
-= form_for @ikezaki do |f|
+%body
+  .wrapper
+    .navbar
+      = link_to root_path, class: 'logo-part' do
+        %p KOS
+    .container
+      .inner
+        .inner-contents
+          .wrapper-page-title
+            %h1.page-title あなただけのサンシャインを作りましょう
+          .inner-content
+            %p.text-o-lead 
+              汗を共に流した仲間との忘年会や結婚式の余興
+              %br
+              懲らしめたいあいつへの罰ゲームまで
+              %br
+              あなたのニーズに合わせて
+              %br
+              あなただけの快適なジャスティスを
+            .form
+              = form_for @ikezaki do |f|
+                = f.label "名前"
+                %br/
+                = f.text_field :name
+                .errors
+                  = @ikezaki.errors.full_messages_for(:name)[0]
+                %br/
+                = f.label "性別"
+                %br/
+                = f.check_box :sex, value: "男"
+                = f.label :sex, '男'
+                = f.check_box :sex, value: "女"
+                = f.label :sex, '女'
+                %br/
+                = f.label "職業"
+                %br/
+                = f.text_field :occupation
+                .errors
+                  = @ikezaki.errors.full_messages_for(:occupation)[0]
+                %br/
+                = f.label "何を愛し、何に愛された？"
+                %br/
+                = f.text_field :love
+                .errors
+                  = @ikezaki.errors.full_messages_for(:love)[0]
+                %br/
+                = f.label "あなたは何の生みの親？３つお答えください"
+                %br/
+                = f.text_field :birth1
+                .errors
+                  = @ikezaki.errors.full_messages_for(:birth1)[0]
+                %br/
+                = f.text_field :birth2
+                .errors
+                  = @ikezaki.errors.full_messages_for(:birth2)[0]
+                %br/
+                = f.text_field :birth3
+                .errors
+                  = @ikezaki.errors.full_messages_for(:birth3)[0]
+                %br/
+                = f.label "参加したことのあるのは何ー１グランプリ？"
+                %br/
+                = f.text_field :grand_prix
+                .errors
+                  = @ikezaki.errors.full_messages_for(:grand_prix)[0]
+                %br/
+                = f.label "身長"
+                %br/
+                = f.number_field :height
+                .errors
+                  = @ikezaki.errors.full_messages_for(:height)[0]
+                %br/
+                = f.label "体重"
+                %br/
+                = f.number_field :weight
+                .errors
+                  = @ikezaki.errors.full_messages_for(:weight)[0]
+                %br/
+                = f.label "時給"
+                %br/
+                = f.number_field :salary
+                .errors
+                  = @ikezaki.errors.full_messages_for(:salary)[0]
+                %br/
+                = f.label "預金残高"
+                %br/
+                = f.number_field :balance
+                .errors
+                  = @ikezaki.errors.full_messages_for(:balance)[0]
+                %br/
+                = f.label "キャッシュカードの暗証番号"
+                %br/
+                = f.password_field :password
+                .errors
+                  = @ikezaki.errors.full_messages_for(:password)[0]
+                %br/
+                = f.label "暗証番号の覚え方"
+                %br/
+                = f.text_field :tip
+                .errors
+                  = @ikezaki.errors.full_messages_for(:tip)[0]
+                .submit
+                  = f.submit "ジャスティス!!"
+
+
+
+
+
+-# %h2 新規サンシャイン
+-# = form_for @ikezaki do |f|
   = f.label "名前"
   %br/
   = f.text_field :name
