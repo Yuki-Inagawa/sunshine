@@ -2,6 +2,10 @@
   = render partial: "/layouts/header"
   .list-contents
     %h1 サンシャイン一覧
+    %audio{:controls => "", :src => "okselfservice.mp4"}
+      %p
+        %a{:src => "okselfservice.mp4"} 音声ファイルをダウンロード
+
     - @ikezakis.each do |ikezaki|
       .card
         .card-header
